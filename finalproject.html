@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>Superhero Alignment Determiner</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
+			html {
+				background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QEBAODhAPDw0PDw0PDQ0PDw8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODM4NygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOYA2wMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQIDBAf/xAAnEAACAgEEAgICAwEBAAAAAAAAAQIRIQMSMUFRYROBcZGhwfBCIv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD20AIlJoCt6DcTt7ADRk7i6wZzVAPcLehJXgWpCgNExpEw4KiANEb0Oc+UYgbrOQTIhLFF7aAATAagAhgwQCboneg1Xn6MgNlNApoygOPIGo6ELewHJ1yTvROpKyAN5OhJii93PXgrYBSkv8jLW5+i0qI1MsCYPJbkiEhtAS2a6PYLSQm9vGbApzXHYGN5s2hkChUZudP8B8jYFjkjPeU5gOhoz3mjQDtEgVtAImMmXOdOjNZwBIFuI1ACYodeOQngrqwJ2S/zJZb1CLsBxL3Kq7/BKQbQIRrDgXxlJANMUmlyTpPIa3P0ArKSZnE2gwJTJmr4GVBAZUa6Sq7M/wDr7NQMpLLLgqu/opx7+yHOwLbXoigHpysCWNS9k6nIoqwNlkWpLGBwwqIAmmxxTTyXElsC00LciTOwNW0Z94BsIunYD2PwVWPY1q+hNgSvY1IUiQNlND3IwNIcACGvZG4qKsCtqGCRW0BJx9A/RhdP7LUwKaXIrvglz6HB0ANvglrwPdb+y29vuwFGPkpIh6voFMC7j3VhjohxvJcYgBVINomwBktFJA8ZAlR9BtXgfyeh0BNIUttdWEiNoEoaTK+P2aRVAYtPsRvKN+ifirN8ZAmMa5LVET1LKhwBGnV5NG11RiXDTsDQic/DHOWKMgHT9mmkvP8AI4PgNXoBuK6qyGOPKK1IWBKr0KeeMkNU6L0OwISyb7V6E49gAyJsdi1VgCN78mpgbywAzNtlpkz4ASRqiNLAwFqEoqULFtoC4tAZDU/QGgN4/Yt1gBjRcOA3WVEDOCyXdcChCittgSl5LjBeCKLhgCPwKcmU0ZyALY/kfkpSvAfC/KAraqvujODaNlhURNgG5jkKMcWPcBI+cPIUODAmUSXN+TVkPSfoCtLj7KmsEwdYCU8ATYk37/Qy1MCdzBPOSnkmUMAWor/MwnyxwlQ3G8+QK0e79FuiIRoThmwKUEMlzHFgMdmcY7csnUlb+gNqX2Iz0uTdsBUjLVXFAy9LsDFG8JFMgAfJM0Q1kqDAqPBJYmARK2rozY4ICmTCdvITWTIDaayKPItOaSocYNZAJLwIsp8ATpj1Hh/gy1OiYrICNIPgpKiWBoxEKVFfKgJkkVFYILiApSvkIaaY3BjhgDFOmU9RicWC02wG2KOo0U5Lgmr4AqOo20i54IjBpplzyBDHpx5Ex6cuQNHElopsmTrkA2qjOEmJ5d9Gk5oCW7L+JExV5G9RAZ6kaeC4TbdPgiWR/GwK1JVwG9j01XJLAqMU+QcEsrlBGaXIS1E0BD1GTuYRi2bRkkqAxbEbTW7glabANLPJpQRBsB8iYiJwb4AtocES5qq7JAh8v8svSHsYmqA16JITopu+ACUcN+iNLsmRWnJK7A0bJi92H+S3JV+znA0kqE0aafAptAKLpUZGhq6QGelG0aSMdV5wKDyBqPYjLUZFgXqqqIRro9hKPYCjgAGl30A9I0ZG5PgTAYE6Ui2wBoEyVqLyVd8AZuBMmabkTIDRSBxslMJgE4YZnCdBkPjfgDRad58iekvZSdKuxbgCqRnBWaWhtroAjhUJQDchywA9hlLUbwVvXkj434AErLlClZFVyNu8AQ2OCt0DRvGsAKMaG2Ni/PAE7SJS6KnNdGbAcGapWiNHv6NW0BnGNFE70UmBga6Tx9i1I4Jj/YCXP7KKgsmiSAiCHqEt/wBibAExvV9DlVfRiBpdjjGwg1gNV1VATLDoCVzk3tegM9vYakrL/AJLsDA6jKazguwMtbn6Ji6N0k+SdSqAzeTVGB0RawA4mU9TlF6jIVXkDMqMbNlt9GMnlgaKFDI023f0XuXHYC+H2NRrA7EBM5WqCECUaQdc4ASiUmDaFYC2g4FbkTuXkAksER077NGS5eAEtOmU4WCkVFgYSVOvA9xc1lme1+GBSmaEwj5RQAKUqHQTWAFHUIaGo+hMAUC4qiI2aATqyJKbXoG16AmOCvivN8iRpePdASlt92Q1bsE32NAOUqHGRbSFSAz0lkNbn6BMpU+asDJFwkVOCrghICWIvaOMPQA5/wDmvRmbbUROPhAOOlauylChweAbAaLMx2AMlyoujOQGkZWrJITrgtewKiTs7HfgUmwAqStUREqwMZwok3aT5DbH0BOlHkuhIb4sBbbGokKQOTAoCdN+f5wWBLgS4GzJYCm8foy3GtWP414AyjMv5LMmgyBvQJii8AAEzjZbWPomLAIroraIdgTKdYIjkNTkULQGnxkSleDRSZjQFQZoZRRqgGmAgbAjViJFNsTQFRlZTeKMuOC48ATHTHtNIg0BnONhGJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k=');
+			}
+
+			div {
+				text-align: center;
+				align-content: center;
+				align-items: center;
+				font-size: 20px;
+			}
+
+			.Reggae {
+				font-family: 'Reggae One', cursive;
+			}
+			.KoHo {
+				font-family: 'KoHo', sans-serif;
+			}
+
+			.title {
+				text-align: center;
+				font-size: 50px;
+			}
+			.subtitle {
+				text-align: center;
+				font-size: 25px;
+				margin-top: -35px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class = "Reggae title">SUPERHERO ALIGNMENT DETERMINER</h1>
+		<h3 class = "KoHo subtitle">Specify physical attributes for a superhero and see whether they will be good, evil, or neutral!</h3>
+
+	<div>
+		<!-- Gender -->
+		<form>
+			<label>Choose a gender:</label>
+			<select>
+				<option>Male</option>
+				<option>Female</option>
+				<option>Other</option>
+			</select>
+		</form>
+
+		<!-- Skin Color -->
+		<form>
+			<label>Choose a skin color:</label>
+			<select>
+				<option>White</option>
+				<option>Blue</option>
+				<option>Red</option>
+				<option>Black</option>
+				<option>Grey</option>
+				<option>Yellow</option>
+				<option>Gold</option>
+				<option>Green</option>
+				<option>Pink</option>
+				<option>Purple</option>
+				<option>Silver</option>
+			</select>
+		</form>
+
+		<!-- Hair Color -->
+		<form>
+			<label>Choose a hair color:</label>
+			<select>
+				<option>Blond</option>
+				<option>Blue</option>
+				<option>Red</option>
+				<option>Black</option>
+				<option>Grey</option>
+				<option>Yellow</option>
+				<option>Gold</option>
+				<option>Green</option>
+				<option>White</option>
+				<option>Pink</option>
+				<option>Purple</option>
+				<option>Silver</option>
+				<option>Auburn</option>
+				<option>Brown</option>
+				<option>No Hair</option>
+			</select>
+		</form>
+
+		<!-- Eye Color -->
+		<form>
+			<label>Choose an eye color:</label>
+			<select>
+				<option>Blue</option>
+				<option>Red</option>
+				<option>Black</option>
+				<option>Grey</option>
+				<option>Yellow</option>
+				<option>Gold</option>
+				<option>Green</option>
+				<option>White</option>
+				<option>Pink</option>
+				<option>Purple</option>
+				<option>Silver</option>
+				<option>Brown</option>
+			</select>
+		</form>
+
+		<!-- Height -->
+		<form>
+			<label>Height:</label>
+			<input>
+		</form>
+
+		<!-- Weight -->
+		<form>
+			<label>Weight:</label>
+			<input>
+		</form>
+
+		<!-- Submit -->
+		<input type = "submit" value = "Submit">
+		<br> <br>
+
+		<p2 class = "KoHo title">Your hero is: Good!</p1>
+
+	</div>
+	</body>
+</html>
